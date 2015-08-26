@@ -18,10 +18,6 @@ typedef struct stu
 main(){
     struct stu *stu = NULL;
     stu = (struct stu *)malloc(sizeof(struct stu));
-    if (!stu)
-    {
-        printf ("nul\n");
-    }
     free(stu);
 }
 
