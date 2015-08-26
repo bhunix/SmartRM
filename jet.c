@@ -16,14 +16,7 @@ typedef struct stu
 }while (0)\
 
 main(){
-    struct stu *stu = NULL;
-    stu = (struct stu *)malloc(sizeof(struct stu));
-    free(stu);
-}
-
-compare(struct stu *stu)
-{
-    printf("%c\n", stu->b);
+    printf ("nothing to do!");
 }
 
 test(char *c)
