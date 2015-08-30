@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartRM</string>
+    <string name="action_settings">设置</string>
+    <string name="add">创建模式</string>
+    <string name="bt_save">保存</string>
+    <string name="bt_cancel">取消</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">结束时间</string>
+    <string name="tv_repeat">每周重复</string>
+    <string name="Mon">一</string>
+    <string name="Tue">二</string>
+    <string name="Wed">三</string>
+    <string name="Thu">四</string>
+    <string name="Fri">五</string>
+    <string name="Sat">六</string>
+    <string name="Sun">日</string>
+    <string name="toast_create_successful">创建成功!</string>
+    <string name="toast_update_successful">更新成功!</string>
+    <string name="title_activity_alarm_helper">AlarmHelper</string>
+    <string name="title_activity_alarm">Alarm</string>
+    <string name="DeleteDialogTitle">是否删除模式</string>
+    <string name="Yes">是</string>
+    <string name="No">否</string>
+    <string name="help">帮助</string>
+    
+	<string name="help_content">
+	   	设置开始时间和结束时间,\n
+	   	当到达开始时间, 程序会设置系统模式为您设定的模式(静音或者震动)\n
+	   	当到达结束时间, 程序会设置系统模式为普通模式(有声并且震动)\n
+	    \n
+	    如果设置的时间段是隔天的, 比如今晚23点-明天7点, 则需要设置\n
+	    明天也每周重复, 否则明天7点的设置会失效.\n
+	    \n
+	    点击每一项可以更改设置\n
+	    \n
+	    长按每一项可以删除设置\n
+	</string>
+    
+</resources>

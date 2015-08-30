@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">SmartRM</string>
+    <string name="title_activity_alarm_helper">AlarmHelper</string>
+    <string name="title_activity_alarm">Alarm</string>
+    <string name="action_settings">Setting</string>
+    <string name="add">Add mode</string>
+    <string name="bt_save">Save</string>
+    <string name="bt_cancel">Cancel</string>
+    <string name="start_time">start time</string>
+    <string name="end_time">end time</string>
+    <string name="tv_repeat">repeat every week</string>
+    <string name="Mon">1</string>
+    <string name="Tue">2</string>
+    <string name="Wed">3</string>
+    <string name="Thu">4</string>
+    <string name="Fri">5</string>
+    <string name="Sat">6</string>
+    <string name="Sun">7</string>
+    <string name="toast_create_successful">Create successful!</string>
+    <string name="toast_update_successful">Update successful!</string>
+    <string name="DeleteDialogTitle">Delete the mode?</string>
+    <string name="Yes">YES</string>
+    <string name="No">NO</string>
+    <string name="help">Help</string>
+    
+    <string name="help_content">
+        
+        You can set the start-time and the end-time.\n
+        When it reaches the start-time, it\'ll set the mode which you set(vibrate or mute).\n
+        When it reaches the end-time, it\'ll set the normal mode(sound and vibrate).\n
+        \n
+        There is a notice.For example, if you set the start-time at 11pm on saturday and \n
+        the end-time at 7am on sunday, you must check the repeat both saturday and sunday.\n
+        otherwise, the setting of end-time will fail.\n
+        \n
+         Click the item to change the item.\n
+         \n
+         Perform a long press to delete the item. \n
+    </string>
+</resources>

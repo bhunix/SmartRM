@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/darkgray"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dimgray"
+	>
+	<Button
+	    android:id="@+id/save"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:background="@color/dimgray"
+	    android:text="@string/bt_save"
+	    android:textColor="@color/white"
+        />
+		<View 
+	    android:id="@+id/saveLine"
+	    android:layout_width="1dp"
+	    android:layout_height="15dp"
+	    android:layout_toLeftOf="@id/save"
+	    android:layout_centerVertical="true"
+	    android:background="@color/silver"
+	    />
+		
+	<Button
+	    android:id="@+id/cancel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@id/saveLine"
+	    android:background="@color/dimgray"
+	    android:text="@string/bt_cancel"
+	    android:textColor="@color/white"
+	    />
+		<View 
+	    android:layout_width="1dp"
+	    android:layout_height="15dp"
+	    android:layout_toLeftOf="@id/cancel"
+	    android:layout_centerVertical="true"
+	    android:background="@color/silver"
+	    />
+ </RelativeLayout>
+ 
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/slategray"
+    >
+	<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/snow"
+    	>
+ 
+		<TimePicker
+  		 android:id="@+id/sTimePicker"
+ 		 android:layout_width="wrap_content"
+  	 	 android:layout_height="wrap_content"
+   		 />
+		<TextView
+		    android:id="@+id/tvStart"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/sTimePicker"
+		    android:paddingLeft="40dp" 
+		    android:textSize="20sp"
+		    android:text="@string/start_time"
+		 />
+	</RelativeLayout>
+
+	<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:background="@color/gray"
+    >
+		<TimePicker
+   		 android:id="@+id/eTimePicker"
+   		 android:layout_width="wrap_content"
+ 	  	 android:layout_height="wrap_content"
+   		 />
+		<TextView
+		    android:id="@+id/tvEnd"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/eTimePicker"
+		    android:paddingLeft="40dp"
+		    android:textSize="20sp"
+		    android:text="@string/end_time"
+		 />
+	</RelativeLayout>
+	
+</LinearLayout>
+	
+	<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <ToggleButton
+    style="@style/dataStyle"
+    android:id="@+id/MonButton"
+    android:textOff="@string/Mon"
+    android:textOn="@string/Mon"
+    />
+   
+    <ToggleButton
+    style="@style/dataStyle"
+    android:id="@+id/TueButton"
+    android:text="@string/Tue"
+    android:textOff="@string/Tue"
+    android:textOn="@string/Tue"
+    android:layout_toRightOf="@id/MonButton"
+    />
+    
+    <ToggleButton
+    style="@style/dataStyle"
+    android:id="@+id/WedButton"
+    android:text="@string/Wed"
+    android:textOff="@string/Wed"
+    android:textOn="@string/Wed"
+    android:layout_toRightOf="@id/TueButton"
+    />
+    
+    <ToggleButton
+    style="@style/dataStyle"
+    android:id="@+id/ThuButton"
+    android:text="@string/Thu"
+    android:textOff="@string/Thu"
+    android:textOn="@string/Thu"
+    android:layout_toRightOf="@id/WedButton"
+    />
+    
+    <ToggleButton
+    style="@style/dataStyle"
+    android:id="@+id/FriButton"
+    android:text="@string/Fri"
+    android:textOff="@string/Fri"
+    android:textOn="@string/Fri"
+    android:layout_toRightOf="@id/ThuButton"
+    />
+    
+    <ToggleButton
+    style="@style/dataStyle"
+    android:id="@+id/SatButton"
+    android:text="@string/Sat"
+    android:textOff="@string/Sat"
+    android:textOn="@string/Sat"
+    android:layout_toRightOf="@id/FriButton"
+    />
+    
+    <ToggleButton
+    style="@style/dataStyle"
+    android:id="@+id/SunButton"
+    android:text="@string/Sun"
+    android:textOff="@string/Sun"
+    android:textOn="@string/Sun"
+    android:layout_toRightOf="@id/SatButton"
+    />
+   </RelativeLayout>
+   
+	<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView 
+        android:id="@+id/tvRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:paddingRight="40dp"
+        android:paddingTop="5dp"
+        android:text="@string/tv_repeat"
+     	/>
+    
+	<CheckBox
+	    android:id="@+id/boxRepeat"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toLeftOf="@id/tvRepeat"    
+		/>
+	    
+	</RelativeLayout>
+	
+	<Spinner
+	    android:id="@+id/spinnerMode"
+	    android:layout_width="200dp"
+	    android:layout_height="50dp"
+	    android:layout_gravity="center"
+	    />
+	
+
+</LinearLayout>
+    

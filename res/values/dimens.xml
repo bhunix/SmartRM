@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	
+    <dimen name="item_left_margin">20dp</dimen>
+    <dimen name="item_timeView_textSize">20sp</dimen>
+ 
+    <dimen name="item_centerView_marginLeft">8dp</dimen>
+    <dimen name="item_timeView_width">130dp</dimen>
+    
+    <dimen name="item_activate_marginLeft">5dp</dimen>
+    <dimen name="item_activate_marginTop">5dp</dimen>
+    
+    <dimen name="bt_create_width">130dp</dimen>
+    <dimen name="bt_create_height">130dp</dimen>
+    <dimen name="bt_create_textSize">30sp</dimen>
+    
+    <dimen name="help_text_size">15sp</dimen>
+
+</resources>

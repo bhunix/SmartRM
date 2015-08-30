@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/list_item_bg"
+    >
+    
+ <TextView
+     android:id="@+id/timeView"
+     android:layout_width="@dimen/item_timeView_width"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:textSize="@dimen/item_timeView_textSize"
+     android:layout_marginLeft="@dimen/item_left_margin"
+     />
+ 
+ <RelativeLayout
+    android:id="@+id/centerView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/item_centerView_marginLeft"
+    android:layout_toRightOf="@id/timeView"
+     >
+    <TextView 
+     android:id="@+id/modeView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     />
+  <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/modeView"
+    >
+    <TextView 
+        style="@style/dataViewStyle"
+        android:id="@+id/MonView"
+        android:text="@string/Mon"
+        />
+    <TextView 
+        style="@style/dataViewStyle"
+        android:id="@+id/TueView"
+        android:text="@string/Tue"
+        />
+    <TextView 
+        style="@style/dataViewStyle"
+        android:id="@+id/WedView"
+        android:text="@string/Wed"
+        />
+    <TextView 
+        style="@style/dataViewStyle"
+        android:id="@+id/ThuView"
+        android:text="@string/Thu"
+        />
+     <TextView 
+        style="@style/dataViewStyle"
+        android:id="@+id/FriView"
+        android:text="@string/Fri"
+        />
+     <TextView 
+        style="@style/dataViewStyle"
+        android:id="@+id/SatView"
+        android:text="@string/Sat"
+        />
+     <TextView 
+        style="@style/dataViewStyle"
+        android:id="@+id/SunView"
+        android:text="@string/Sun"
+        />
+	</LinearLayout>
+	</RelativeLayout>
+ 
+ <ToggleButton
+     android:id="@+id/activateButton"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_marginLeft="@dimen/item_activate_marginLeft"
+     android:layout_toRightOf="@id/centerView"
+     android:background="@drawable/activate_button"
+     />
+
+</RelativeLayout>
+
